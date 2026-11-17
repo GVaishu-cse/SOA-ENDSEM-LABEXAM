@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+app:
+  jwt:
+    # Demo-only key. Override JWT_SECRET with a securely generated Base64 key in real deployments.
+    secret: ${JWT_SECRET:VGhpc0lzQURlbW9LZXlGb3JKV1RTaGFyZWRTZWNyZXRLZXlTdHJpbmdGb3JEZW1vMTIzNDU2Nzg=}
+    expiration-minutes: ${JWT_EXPIRATION_MINUTES:60}
